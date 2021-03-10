@@ -69,3 +69,13 @@ footer {
 .review__pic {
     border-radius: 50%;
 }
+
+
+/*Contact-page*/
+
+input,
+select,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
