@@ -1,0 +1,36 @@
+    input,
+    select,
+    textarea {
+        /*Utseende og avstand på og mellom tekstfeltene*/
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    textarea {
+        /*Skriveboblen i skjemaet*/
+        height: 65%;
+        min-height: 100px;
+    }
+    
+    .contact {
+        /*Plasserer content i klassen contact. Bruker ikke mer enn 1000px, marginen er alltid 50 px, og plassering av innhold er i senter*/
+        max-width: 1000px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    .form-wrapper {
+        /*display flex gjør at alt blir plassert inni en boks. align plasserer alt i klassen til venstre hvis skjermen blir mindre*/
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+    
+    .form-wrapper>* {
+        /*< * betyr alt innenfor denne klassen. Display gjør at du kan operere i en flexbox. flex: 1 viser til hvor mange kolonner boksen er delt inn i, her en. flex-direction viser hvilken retning, her kolonner.*/
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
